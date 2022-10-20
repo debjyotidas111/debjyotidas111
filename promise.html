@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=screen", initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let car = new Promise(function(resolve, reject){
+            fuel_tank= true;
+            // if true fuel tank is full
+            // if false fuel tank is not full
+            if(fuel_tank)
+            resolve()
+            else
+            reject()
+        });
+        car.then(function(){
+            document.write("fuel tank is full ")
+        }).catch(function(){
+            document.write("fuel tank is not full ")
+        })
+
+        let emptytank= function(){
+            return new Promise(function(resolve1, reject1){
+                resolve1("the car does not have fuel ",)
+            })
+        }
+        let engine = function(msg){
+            return new Promise(function(resolve1, reject1){
+                resolve1(msg + "the engine is over heating ")
+            })
+        }
+        let travel = function(msg){
+        return new Promise (function(resolve1, reject1){
+             resolve1(msg  + "the car is not safe for travel")
+        })
+        }
+        emptytank().then(function(result){
+            return engine(result)
+        }).then(function(result){
+            return travel(result)
+        }).then(function(result){
+            document.write("done " + result);
+        })
+
+        let result1 = function(score){
+            return new Promise(function(resolve2, reject2){
+                console.log("calculation result...");
+                if(score>50)
+                resolve2("congratulation you have passed")
+                else
+                reject2("you have failed")
+            })
+           
+        }
+        let grade = function(response){
+            return new Promise(function(resolve2, reject2){
+                console.log("calculating ur grade...");
+                resolve2("your grade is A. " + response)
+            })
+        }
+        //with the use of async and await
+
+        async function calculateResults(){
+            try{
+                const response3 = await result1(80)
+                console.log("results received");
+                const finalgrade = await grade(response3)
+                console.log(finalgrade);
+            }catch(err){
+                console.log(err);
+            }
+        }
+        calculateResults()
+
+        // result1(80).then(response =>{
+        //     console.log("results received");
+        //     return grade(response)
+        // }).then(finalgade => {
+        //     console.log(finalgade);
+        // }).catch(err => {
+        //     console.log(err);
+        // })
+// calculation result...
+// results received
+// calculating ur grade...
+// your grade is A. congratulation you have passed
+</script>
+</body>
+</html>

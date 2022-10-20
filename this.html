@@ -1,0 +1,34 @@
+
+
+<html>
+    <head>
+        <title>Jvascript Objects</title>
+    </head>
+    <body>
+        <script>
+
+        var value = 100;
+
+     function oops(){
+    
+    var value = 50;
+    alert("value: "+ value);
+    alert("This Value: "+ this.value);
+}
+oops();
+        </script>
+        <script>
+            const random = {
+                name : "Alex",
+                video : ["gg", "tt", "hh"],
+                info(){
+                    this.video.forEach((tag)=>{
+                        console.log(this.name,tag);
+                    })
+                    console.log("Hi My name is " + this.name)
+                }
+            }
+            random.info();
+        </script>
+    </body>
+    </html>
