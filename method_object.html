@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Jvascript Objects</title>
+    </head>
+    <body>
+        <h1>Creating Javascript Objects</h1>
+        <p id="demo"></p>
+        <button id="click me">Click Me</button>  
+
+        <script>
+            var user ={
+                name : "Debjyoti",
+                age : 24,
+            };
+            function sayHi(){
+                 alert("Hello! Boss Whats up" );
+            };
+            user.message = sayHi;
+            document.getElementById("demo").innerHTML = "Hi " + user.name;
+            document.getElementById("click me").onclick = user.message;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,187 @@
+<!-- Every html file starts with html and end with html tags. 
+    HTML
+    => 
+FirstName - Done
+LastName - Done.
+Email. - Done.
+Password. - Done.
+Dob.
+Mobile.
+Gender.
+AddressLine
+City.
+PinCode.
+T&C.
+button.
+
+Elements.
+    => Tags+Attributes+Inner content.
+
+Most commonly used tags in html.
+lists. - done.
+anchor. - done.
+paragraph - done.
+div - done.
+span - done.
+img - DOne.
+Table.
+
+
+Div vs Span.
+    => Both are containers to group elements together.
+
+2 Types of Elements.
+1. Block-Level Element.
+    1.1 It occuppies entire line.
+    1.2 It starts on new line.
+    eg: Div, p, lists.
+2. Inlline Element.
+    2.1 It occuppies space as much as it needs for the content.
+    eg: span, anchor, img
+-->
+
+<html>
+
+<!-- to provide information about application, includes external resources(js, css). -->
+
+<head>
+
+</head>
+
+<!-- Includes your visible part of web page. -->
+
+<body>
+
+    <!-- h1[Largest], h2, h3, h4, h5, h6[Smallest] -->
+    <h2>Please SignUp !!</h2>
+    <h4>It's quick and easy.</h4>
+
+    <!-- Create form and controls inside form. -->
+    <!-- A container contains form controls. -->
+    <form>
+        <!-- Self closing tags -->
+        <!-- Attribute => [name="value"] -->
+        <label for="fname">Enter First Name</label>
+        <label>Enter Last Name</label>
+        <br />
+        <input type="text" name="fname" placeholder="Your First Name" />
+        <input type="text" name="lname" placeholder="Your Last Name" />
+        <br />
+        <label for="email">*Enter Email</label>
+        <br />
+        <input type="email" name="email" placeholder="Your Email">
+        <br />
+        <label for="password">Enter Password</label>
+        <br />
+        <input type="password" name="password" placeholder="Your Password">
+        <br />
+        <label for="dob">Enter date of Birth</label>
+        <br />
+        <input type="date" name="dob">
+        <br />
+        <label for="mobile">Enter Mobile Phone</label>
+        <br />
+        <input type="text">
+        <input type="number" name="mobile">
+        <br />
+        <label for="gender">Please Select your Gender</label>
+        <br />
+        <input type="radio" name="gender">
+        <label for="">Male</label>
+        <input type="radio" name="gender">
+        <label for="">Female</label>
+        <input type="radio" name="gender">
+        <label for="">Other</label>
+        <br />
+        <!-- TextArea : Multiline text -->
+        <label for="address">Enter Your Address</label>
+        <br />
+        <textarea name="address" cols="30" placeholder="Your Address" rows="4"></textarea>
+        <br />
+        <label for="pincode">Enter Pincode</label>
+        <br />
+        <input type="text" name="pincode">
+        <br />
+        <label for="city">Select Your City</label>
+        <br />
+        <select name="city">
+            <option value="-1">Select City</option>
+            <option value="0">Mumbai</option>
+            <option value="1">Hyderabad</option>
+            <option value="2">Banglore</option>
+            <option value="3">New Delhi</option>
+            <option value="0">Pune</option>
+        </select>
+        <br />
+        <input type="checkbox" name="tc">
+        <label for="tc">Terms & Conditions</label>
+
+        <!-- Buttons -->
+        <br />
+         <input type="submit" value="Sign Up"> 
+        <!-- <input type="button" name="save" value="Sign Up"> -->
+        <button type="submit">submit</button>
+        <button type="reset">Clear</button>
+    </form>
+
+  <!-- href - hyper link reference. -->
+    <!-- create a link to go to another page/site/application. -->
+    <a href="SignUp.html">Go to Singup</a>
+
+    <p>
+        Page and Brin originally nicknamed the new search engine "BackRub", because the system checked backlinks to
+        estimate the importance of a site.[20][30][31] Hassan as well as <a href="SignUp.html">Go to Singup</a>
+        Steremberg were cited by Page and Brin as
+        being critical to the development of Google. Rajeev Motwani and Terry Winograd later co-authored with Page and
+        Brin the first paper about the project, describing PageRank and the initial prototype of the Google search
+        engine, published in 1998. Héctor García-Molina and Jeff Ullman were also cited as contributors to the
+        project.[32] PageRank was influenced by a similar page-ranking and site-scoring algorithm earlier used for
+        RankDex, developed by Robin Li in 1996, with Larry Page's PageRank patent including a citation to Li's earlier
+        RankDex patent; Li later went on to create the Chinese search engine Baidu.[
+    </p>
+    <!-- Lists -->
+    <!-- Ordered list, Unordered list -->
+    <div>
+        <ol>
+            <li> <a href="SignUp.html">Go to Singup</a></li>
+            <li>China</li>
+            <li>Japan</li>
+            <li>USA</li>
+            <li>Spain</li>
+        </ol>
+
+        <ul>
+            <li>India</li>
+            <li>China</li>
+            <li>Japan</li>
+            <li>USA</li>
+            <li>Spain</li>
+        </ul>
+    </div>
+
+
+    <div>This is <span style="color: red;">Div.</span> </div>
+    <span>This is <span style="color: blue;">span </span> </span> 
+    <span>This is span 2</span>
+    <div>This is div 2</div>
+
+    <!-- Self closing tag -->
+    <!-- src - source of image , alt : alterate text -->
+    
+<figure>
+    <img src="20220423_102814.jpg" alt="hh">
+    <figcaption>The Mastermind</figcaption>
+</figure>
+
+   <picture>
+    <source srcset="20220423_102814.webp">
+    <img src="20220423_102814.jpg" alt="hh">
+   </picture>
+     
+
+</body>
+
+</html>
+ <!--   <img 
+    src="https://upload.wiimedia.org/wikipedia/commons/thumb/3/32/Googleplex_HQ_%28cropped%29.jpg/500px-Googleplex_HQ_%28cropped%29.jpg"
+        alt="Google Office">

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Half Tone Pattern</title>
+    <link href="HalfTonePattern.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+
+<!--
+Resources by Ana Tudor:
+https://codepen.io/thebabydino/pen/gOpMeWv
+https://codepen.io/thebabydino/pen/LYGGwrm
+-->
+
+<form class="controls">
+	<fieldset>
+		<legend>Blend mode</legend>
+		<div>
+			<label for="r1">Multiply</label>
+			<input type="radio" id="r1" checked name="blendMode" value="multiply">
+		</div>
+		<div>
+			<label for="r2">Screen</label>
+			<input type="radio" id="r2" name="blendMode" value="screen">
+		</div>
+		<div>
+			<label for="r3">None</label>
+			<input type="radio" id="r3" name="blendMode" value="none">
+		</div>
+	</fieldset>
+	<div>
+		<label for="dotSize">Background size: <span data-size>0.75rem</span></label>
+		<input type="range" min="0.3" max="1.5" step="0.1" value="0.5" id="dotSize" name="dotSize">
+	</div>
+	<div>
+		<label for="contrast">Contrast: <span data-contrast>20</span></label>
+		<input type="range" min="1" max="20" step="1" value="20" id="contrast" name="contrast">
+	</div>
+	<div>
+		<label for="dotRadius">Dot radius: <span data-radius>53rem</span></label>
+		<input type="range" min="20" max="100" step="1" value="70" id="dotRadius" name="dot radius">
+	</div>
+	<div>
+		<label for="invert">Invert </label>
+		<input type="checkbox" id="invert">
+	</div>
+</form>
+<div class="grid">
+	<div class="card">
+		<div class="halftone"></div>
+	</div>
+	<div class="card">
+		<div class="halftone"></div>
+	</div>
+	<div class="card">
+		<div class="halftone"></div>
+	</div>
+	<div class="card">
+		<div class="halftone"></div>
+	</div>
+	<div class="card">
+		<div class="halftone"></div>
+	</div>
+	<div class="card">
+		<div class="halftone"></div>
+	</div>
+	<div class="card">
+		<div class="halftone"></div>
+	</div>
+	<div class="card">
+		<div class="halftone"></div>
+	</div>
+</div>
+
+<script src="halftonepattern.js"></script>
+</body>
+</html>

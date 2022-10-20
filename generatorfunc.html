@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Jvascript Objects</title>
+    </head>
+    <body>
+        <script>
+function* generateFunc(){
+    yield 1;
+    yield 2;
+    return 3;
+}
+let generator = generateFunc();
+let one = generator.next();
+let two = generator.next();
+let three = generator.next();
+alert(JSON.stringify(one));
+alert(JSON.stringify(two));
+alert(JSON.stringify(three));
+</script>
+</body>
+</html>
