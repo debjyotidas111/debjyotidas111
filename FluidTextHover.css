@@ -1,0 +1,31 @@
+body {
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  canvas {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+  
+  .mask {
+    position: absolute;
+    z-index: 2;
+    background: white;
+    height: 100vh;
+    width: 100vw;
+    mix-blend-mode: screen;
+    /* display: none; */
+  }
+  
+  svg {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

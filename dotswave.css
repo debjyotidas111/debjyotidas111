@@ -1,0 +1,1365 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #111;
+    color: #fff;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  .dots {
+    display: grid;
+    grid-template-columns: repeat(20, 24px);
+    grid-template-rows: repeat(20, 24px);
+    place-items: center;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: hsl(var(--hue), 90%, 70%);
+    border-radius: 50%;
+    -webkit-animation: dot 24s calc(var(--delay1, 0s) + var(--delay2, 0s)) infinite ease-in-out;
+            animation: dot 24s calc(var(--delay1, 0s) + var(--delay2, 0s)) infinite ease-in-out;
+  }
+  @-webkit-keyframes dot {
+    from {
+      transform: rotate(0deg) translateX(24px);
+    }
+    to {
+      transform: rotate(1440deg) translateX(24px);
+    }
+  }
+  @keyframes dot {
+    from {
+      transform: rotate(0deg) translateX(24px);
+    }
+    to {
+      transform: rotate(1440deg) translateX(24px);
+    }
+  }
+  .dot:nth-child(1) {
+    --hue: 197.7383880995;
+  }
+  .dot:nth-child(2) {
+    --hue: 332.1687666337;
+  }
+  .dot:nth-child(3) {
+    --hue: 202.7992524149;
+  }
+  .dot:nth-child(4) {
+    --hue: 290.2855596413;
+  }
+  .dot:nth-child(5) {
+    --hue: 258.6621601232;
+  }
+  .dot:nth-child(6) {
+    --hue: 217.660466174;
+  }
+  .dot:nth-child(7) {
+    --hue: 116.4867472566;
+  }
+  .dot:nth-child(8) {
+    --hue: 245.9342928718;
+  }
+  .dot:nth-child(9) {
+    --hue: 76.5844498691;
+  }
+  .dot:nth-child(10) {
+    --hue: 324.9164110712;
+  }
+  .dot:nth-child(11) {
+    --hue: 85.5918674976;
+  }
+  .dot:nth-child(12) {
+    --hue: 105.6907161138;
+  }
+  .dot:nth-child(13) {
+    --hue: 338.8551435875;
+  }
+  .dot:nth-child(14) {
+    --hue: 7.999927637;
+  }
+  .dot:nth-child(15) {
+    --hue: 182.7895053095;
+  }
+  .dot:nth-child(16) {
+    --hue: 79.813163739;
+  }
+  .dot:nth-child(17) {
+    --hue: 29.8952956923;
+  }
+  .dot:nth-child(18) {
+    --hue: 77.2819525493;
+  }
+  .dot:nth-child(19) {
+    --hue: 66.3632137479;
+  }
+  .dot:nth-child(20) {
+    --hue: 154.6584407358;
+  }
+  .dot:nth-child(21) {
+    --hue: 337.3079083592;
+  }
+  .dot:nth-child(22) {
+    --hue: 307.2880701483;
+  }
+  .dot:nth-child(23) {
+    --hue: 214.8540389021;
+  }
+  .dot:nth-child(24) {
+    --hue: 111.957246311;
+  }
+  .dot:nth-child(25) {
+    --hue: 112.683128127;
+  }
+  .dot:nth-child(26) {
+    --hue: 159.0509785264;
+  }
+  .dot:nth-child(27) {
+    --hue: 184.055172954;
+  }
+  .dot:nth-child(28) {
+    --hue: 54.2678954968;
+  }
+  .dot:nth-child(29) {
+    --hue: 75.1170658994;
+  }
+  .dot:nth-child(30) {
+    --hue: 294.7423969049;
+  }
+  .dot:nth-child(31) {
+    --hue: 203.4679369316;
+  }
+  .dot:nth-child(32) {
+    --hue: 72.7631759745;
+  }
+  .dot:nth-child(33) {
+    --hue: 300.90871377;
+  }
+  .dot:nth-child(34) {
+    --hue: 153.2830981036;
+  }
+  .dot:nth-child(35) {
+    --hue: 142.6804573129;
+  }
+  .dot:nth-child(36) {
+    --hue: 123.7478137871;
+  }
+  .dot:nth-child(37) {
+    --hue: 337.6470081845;
+  }
+  .dot:nth-child(38) {
+    --hue: 249.3597619553;
+  }
+  .dot:nth-child(39) {
+    --hue: 259.8073973941;
+  }
+  .dot:nth-child(40) {
+    --hue: 336.7502549792;
+  }
+  .dot:nth-child(41) {
+    --hue: 263.9100823884;
+  }
+  .dot:nth-child(42) {
+    --hue: 206.6768097199;
+  }
+  .dot:nth-child(43) {
+    --hue: 289.5916350752;
+  }
+  .dot:nth-child(44) {
+    --hue: 304.0694854117;
+  }
+  .dot:nth-child(45) {
+    --hue: 282.8303451145;
+  }
+  .dot:nth-child(46) {
+    --hue: 272.8036256046;
+  }
+  .dot:nth-child(47) {
+    --hue: 159.2559611112;
+  }
+  .dot:nth-child(48) {
+    --hue: 71.5291033742;
+  }
+  .dot:nth-child(49) {
+    --hue: 329.2335062501;
+  }
+  .dot:nth-child(50) {
+    --hue: 8.8678736845;
+  }
+  .dot:nth-child(51) {
+    --hue: 79.7230513678;
+  }
+  .dot:nth-child(52) {
+    --hue: 268.5921490596;
+  }
+  .dot:nth-child(53) {
+    --hue: 148.2791036723;
+  }
+  .dot:nth-child(54) {
+    --hue: 309.169870345;
+  }
+  .dot:nth-child(55) {
+    --hue: 228.3820059385;
+  }
+  .dot:nth-child(56) {
+    --hue: 109.541994316;
+  }
+  .dot:nth-child(57) {
+    --hue: 281.6276777744;
+  }
+  .dot:nth-child(58) {
+    --hue: 232.0190294196;
+  }
+  .dot:nth-child(59) {
+    --hue: 243.5645931674;
+  }
+  .dot:nth-child(60) {
+    --hue: 2.4404339983;
+  }
+  .dot:nth-child(61) {
+    --hue: 7.0303271392;
+  }
+  .dot:nth-child(62) {
+    --hue: 131.6231515505;
+  }
+  .dot:nth-child(63) {
+    --hue: 343.5699296574;
+  }
+  .dot:nth-child(64) {
+    --hue: 30.3772798984;
+  }
+  .dot:nth-child(65) {
+    --hue: 298.6679063118;
+  }
+  .dot:nth-child(66) {
+    --hue: 125.9432222891;
+  }
+  .dot:nth-child(67) {
+    --hue: 15.9978822667;
+  }
+  .dot:nth-child(68) {
+    --hue: 40.6986295354;
+  }
+  .dot:nth-child(69) {
+    --hue: 36.533285643;
+  }
+  .dot:nth-child(70) {
+    --hue: 195.1296206373;
+  }
+  .dot:nth-child(71) {
+    --hue: 191.1998243727;
+  }
+  .dot:nth-child(72) {
+    --hue: 127.436182609;
+  }
+  .dot:nth-child(73) {
+    --hue: 122.4358839584;
+  }
+  .dot:nth-child(74) {
+    --hue: 333.3322987769;
+  }
+  .dot:nth-child(75) {
+    --hue: 241.9298173441;
+  }
+  .dot:nth-child(76) {
+    --hue: 42.4007565664;
+  }
+  .dot:nth-child(77) {
+    --hue: 50.8716771625;
+  }
+  .dot:nth-child(78) {
+    --hue: 1.3377324655;
+  }
+  .dot:nth-child(79) {
+    --hue: 77.2960856234;
+  }
+  .dot:nth-child(80) {
+    --hue: 208.8389495022;
+  }
+  .dot:nth-child(81) {
+    --hue: 3.7204012636;
+  }
+  .dot:nth-child(82) {
+    --hue: 291.0418474792;
+  }
+  .dot:nth-child(83) {
+    --hue: 324.6285730829;
+  }
+  .dot:nth-child(84) {
+    --hue: 273.0061200815;
+  }
+  .dot:nth-child(85) {
+    --hue: 100.5019685868;
+  }
+  .dot:nth-child(86) {
+    --hue: 170.0549450157;
+  }
+  .dot:nth-child(87) {
+    --hue: 301.0346460414;
+  }
+  .dot:nth-child(88) {
+    --hue: 242.3531892795;
+  }
+  .dot:nth-child(89) {
+    --hue: 219.1351633453;
+  }
+  .dot:nth-child(90) {
+    --hue: 208.4669611869;
+  }
+  .dot:nth-child(91) {
+    --hue: 232.4853149824;
+  }
+  .dot:nth-child(92) {
+    --hue: 1.2927825334;
+  }
+  .dot:nth-child(93) {
+    --hue: 46.9885223388;
+  }
+  .dot:nth-child(94) {
+    --hue: 302.4965966553;
+  }
+  .dot:nth-child(95) {
+    --hue: 220.7158483086;
+  }
+  .dot:nth-child(96) {
+    --hue: 106.0966324175;
+  }
+  .dot:nth-child(97) {
+    --hue: 249.3121062045;
+  }
+  .dot:nth-child(98) {
+    --hue: 114.6168618035;
+  }
+  .dot:nth-child(99) {
+    --hue: 125.8411759801;
+  }
+  .dot:nth-child(100) {
+    --hue: 135.7486356672;
+  }
+  .dot:nth-child(101) {
+    --hue: 89.1788470577;
+  }
+  .dot:nth-child(102) {
+    --hue: 180.1958719724;
+  }
+  .dot:nth-child(103) {
+    --hue: 325.9288261308;
+  }
+  .dot:nth-child(104) {
+    --hue: 98.747154732;
+  }
+  .dot:nth-child(105) {
+    --hue: 301.8178357905;
+  }
+  .dot:nth-child(106) {
+    --hue: 123.4322552452;
+  }
+  .dot:nth-child(107) {
+    --hue: 179.9034210968;
+  }
+  .dot:nth-child(108) {
+    --hue: 112.3407842794;
+  }
+  .dot:nth-child(109) {
+    --hue: 76.6002923355;
+  }
+  .dot:nth-child(110) {
+    --hue: 64.79634023;
+  }
+  .dot:nth-child(111) {
+    --hue: 301.3029520807;
+  }
+  .dot:nth-child(112) {
+    --hue: 235.1054047222;
+  }
+  .dot:nth-child(113) {
+    --hue: 167.10528244;
+  }
+  .dot:nth-child(114) {
+    --hue: 58.8838244234;
+  }
+  .dot:nth-child(115) {
+    --hue: 210.3336614867;
+  }
+  .dot:nth-child(116) {
+    --hue: 20.8287584336;
+  }
+  .dot:nth-child(117) {
+    --hue: 190.2957195176;
+  }
+  .dot:nth-child(118) {
+    --hue: 145.8235153964;
+  }
+  .dot:nth-child(119) {
+    --hue: 202.7014347811;
+  }
+  .dot:nth-child(120) {
+    --hue: 64.1651085384;
+  }
+  .dot:nth-child(121) {
+    --hue: 153.5274754234;
+  }
+  .dot:nth-child(122) {
+    --hue: 50.0885181402;
+  }
+  .dot:nth-child(123) {
+    --hue: 306.3283592961;
+  }
+  .dot:nth-child(124) {
+    --hue: 80.2218281766;
+  }
+  .dot:nth-child(125) {
+    --hue: 58.8759556592;
+  }
+  .dot:nth-child(126) {
+    --hue: 226.7443159987;
+  }
+  .dot:nth-child(127) {
+    --hue: 52.2478430635;
+  }
+  .dot:nth-child(128) {
+    --hue: 198.7140551092;
+  }
+  .dot:nth-child(129) {
+    --hue: 126.7439471149;
+  }
+  .dot:nth-child(130) {
+    --hue: 272.2306354583;
+  }
+  .dot:nth-child(131) {
+    --hue: 252.2550304741;
+  }
+  .dot:nth-child(132) {
+    --hue: 110.6778053893;
+  }
+  .dot:nth-child(133) {
+    --hue: 9.7054590234;
+  }
+  .dot:nth-child(134) {
+    --hue: 149.6174880853;
+  }
+  .dot:nth-child(135) {
+    --hue: 249.2043924215;
+  }
+  .dot:nth-child(136) {
+    --hue: 70.8875036777;
+  }
+  .dot:nth-child(137) {
+    --hue: 112.105351881;
+  }
+  .dot:nth-child(138) {
+    --hue: 336.6779313376;
+  }
+  .dot:nth-child(139) {
+    --hue: 104.4669806223;
+  }
+  .dot:nth-child(140) {
+    --hue: 322.6826153927;
+  }
+  .dot:nth-child(141) {
+    --hue: 188.774397643;
+  }
+  .dot:nth-child(142) {
+    --hue: 323.6325118305;
+  }
+  .dot:nth-child(143) {
+    --hue: 73.39689169;
+  }
+  .dot:nth-child(144) {
+    --hue: 185.8102823101;
+  }
+  .dot:nth-child(145) {
+    --hue: 301.5994165742;
+  }
+  .dot:nth-child(146) {
+    --hue: 338.0195363656;
+  }
+  .dot:nth-child(147) {
+    --hue: 230.197113559;
+  }
+  .dot:nth-child(148) {
+    --hue: 114.4450776061;
+  }
+  .dot:nth-child(149) {
+    --hue: 201.120906952;
+  }
+  .dot:nth-child(150) {
+    --hue: 108.7782774181;
+  }
+  .dot:nth-child(151) {
+    --hue: 131.1940740339;
+  }
+  .dot:nth-child(152) {
+    --hue: 207.3859532686;
+  }
+  .dot:nth-child(153) {
+    --hue: 75.5025691826;
+  }
+  .dot:nth-child(154) {
+    --hue: 188.262349006;
+  }
+  .dot:nth-child(155) {
+    --hue: 202.2274489408;
+  }
+  .dot:nth-child(156) {
+    --hue: 118.8908841848;
+  }
+  .dot:nth-child(157) {
+    --hue: 251.4503620604;
+  }
+  .dot:nth-child(158) {
+    --hue: 275.3125422677;
+  }
+  .dot:nth-child(159) {
+    --hue: 330.0747538915;
+  }
+  .dot:nth-child(160) {
+    --hue: 123.0240653006;
+  }
+  .dot:nth-child(161) {
+    --hue: 118.3420931388;
+  }
+  .dot:nth-child(162) {
+    --hue: 126.296411428;
+  }
+  .dot:nth-child(163) {
+    --hue: 302.3725660845;
+  }
+  .dot:nth-child(164) {
+    --hue: 58.0481540651;
+  }
+  .dot:nth-child(165) {
+    --hue: 167.7679048462;
+  }
+  .dot:nth-child(166) {
+    --hue: 44.7584992791;
+  }
+  .dot:nth-child(167) {
+    --hue: 305.1295109683;
+  }
+  .dot:nth-child(168) {
+    --hue: 321.1855726252;
+  }
+  .dot:nth-child(169) {
+    --hue: 262.4204223746;
+  }
+  .dot:nth-child(170) {
+    --hue: 137.7192578282;
+  }
+  .dot:nth-child(171) {
+    --hue: 114.544480323;
+  }
+  .dot:nth-child(172) {
+    --hue: 312.9728502361;
+  }
+  .dot:nth-child(173) {
+    --hue: 233.402914855;
+  }
+  .dot:nth-child(174) {
+    --hue: 245.2563278073;
+  }
+  .dot:nth-child(175) {
+    --hue: 239.8521085438;
+  }
+  .dot:nth-child(176) {
+    --hue: 139.3862480039;
+  }
+  .dot:nth-child(177) {
+    --hue: 21.9388047113;
+  }
+  .dot:nth-child(178) {
+    --hue: 231.7644193881;
+  }
+  .dot:nth-child(179) {
+    --hue: 64.621810834;
+  }
+  .dot:nth-child(180) {
+    --hue: 243.5150233637;
+  }
+  .dot:nth-child(181) {
+    --hue: 81.2647609307;
+  }
+  .dot:nth-child(182) {
+    --hue: 300.0264741208;
+  }
+  .dot:nth-child(183) {
+    --hue: 258.2629869515;
+  }
+  .dot:nth-child(184) {
+    --hue: 325.2673007075;
+  }
+  .dot:nth-child(185) {
+    --hue: 285.92698768;
+  }
+  .dot:nth-child(186) {
+    --hue: 218.669210533;
+  }
+  .dot:nth-child(187) {
+    --hue: 83.1071853118;
+  }
+  .dot:nth-child(188) {
+    --hue: 297.820828839;
+  }
+  .dot:nth-child(189) {
+    --hue: 146.120025453;
+  }
+  .dot:nth-child(190) {
+    --hue: 166.4945284485;
+  }
+  .dot:nth-child(191) {
+    --hue: 326.1752388847;
+  }
+  .dot:nth-child(192) {
+    --hue: 57.8877208194;
+  }
+  .dot:nth-child(193) {
+    --hue: 158.2875842516;
+  }
+  .dot:nth-child(194) {
+    --hue: 148.0001493882;
+  }
+  .dot:nth-child(195) {
+    --hue: 232.0034281061;
+  }
+  .dot:nth-child(196) {
+    --hue: 96.2362599784;
+  }
+  .dot:nth-child(197) {
+    --hue: 157.2687534658;
+  }
+  .dot:nth-child(198) {
+    --hue: 113.7362167131;
+  }
+  .dot:nth-child(199) {
+    --hue: 199.5091202797;
+  }
+  .dot:nth-child(200) {
+    --hue: 163.7636508319;
+  }
+  .dot:nth-child(201) {
+    --hue: 305.3168029767;
+  }
+  .dot:nth-child(202) {
+    --hue: 352.67387993;
+  }
+  .dot:nth-child(203) {
+    --hue: 173.5878338262;
+  }
+  .dot:nth-child(204) {
+    --hue: 22.3903421684;
+  }
+  .dot:nth-child(205) {
+    --hue: 321.2147829535;
+  }
+  .dot:nth-child(206) {
+    --hue: 315.8722445526;
+  }
+  .dot:nth-child(207) {
+    --hue: 220.5333830505;
+  }
+  .dot:nth-child(208) {
+    --hue: 191.366443767;
+  }
+  .dot:nth-child(209) {
+    --hue: 284.6463267605;
+  }
+  .dot:nth-child(210) {
+    --hue: 93.4096485401;
+  }
+  .dot:nth-child(211) {
+    --hue: 262.7392996834;
+  }
+  .dot:nth-child(212) {
+    --hue: 18.3780913897;
+  }
+  .dot:nth-child(213) {
+    --hue: 286.9008305376;
+  }
+  .dot:nth-child(214) {
+    --hue: 151.7349286123;
+  }
+  .dot:nth-child(215) {
+    --hue: 277.0297976586;
+  }
+  .dot:nth-child(216) {
+    --hue: 17.0779276189;
+  }
+  .dot:nth-child(217) {
+    --hue: 6.9306009421;
+  }
+  .dot:nth-child(218) {
+    --hue: 165.7583002776;
+  }
+  .dot:nth-child(219) {
+    --hue: 279.4278658418;
+  }
+  .dot:nth-child(220) {
+    --hue: 7.3965418831;
+  }
+  .dot:nth-child(221) {
+    --hue: 247.0482953966;
+  }
+  .dot:nth-child(222) {
+    --hue: 148.5038752561;
+  }
+  .dot:nth-child(223) {
+    --hue: 280.8585258327;
+  }
+  .dot:nth-child(224) {
+    --hue: 171.5919309215;
+  }
+  .dot:nth-child(225) {
+    --hue: 185.005491929;
+  }
+  .dot:nth-child(226) {
+    --hue: 318.8309187966;
+  }
+  .dot:nth-child(227) {
+    --hue: 167.5540566891;
+  }
+  .dot:nth-child(228) {
+    --hue: 101.8262668904;
+  }
+  .dot:nth-child(229) {
+    --hue: 43.7883452003;
+  }
+  .dot:nth-child(230) {
+    --hue: 44.1952596312;
+  }
+  .dot:nth-child(231) {
+    --hue: 300.1843334866;
+  }
+  .dot:nth-child(232) {
+    --hue: 61.2170746366;
+  }
+  .dot:nth-child(233) {
+    --hue: 118.1219108056;
+  }
+  .dot:nth-child(234) {
+    --hue: 188.5623978547;
+  }
+  .dot:nth-child(235) {
+    --hue: 181.6136318286;
+  }
+  .dot:nth-child(236) {
+    --hue: 220.0190882637;
+  }
+  .dot:nth-child(237) {
+    --hue: 228.4229546036;
+  }
+  .dot:nth-child(238) {
+    --hue: 233.9847358553;
+  }
+  .dot:nth-child(239) {
+    --hue: 307.107019606;
+  }
+  .dot:nth-child(240) {
+    --hue: 76.5527855467;
+  }
+  .dot:nth-child(241) {
+    --hue: 149.928099462;
+  }
+  .dot:nth-child(242) {
+    --hue: 298.7804682095;
+  }
+  .dot:nth-child(243) {
+    --hue: 162.5305402045;
+  }
+  .dot:nth-child(244) {
+    --hue: 177.6516789135;
+  }
+  .dot:nth-child(245) {
+    --hue: 125.6698432579;
+  }
+  .dot:nth-child(246) {
+    --hue: 267.5402033211;
+  }
+  .dot:nth-child(247) {
+    --hue: 200.4879614903;
+  }
+  .dot:nth-child(248) {
+    --hue: 104.9292905445;
+  }
+  .dot:nth-child(249) {
+    --hue: 341.247643477;
+  }
+  .dot:nth-child(250) {
+    --hue: 252.6980226087;
+  }
+  .dot:nth-child(251) {
+    --hue: 11.4649206494;
+  }
+  .dot:nth-child(252) {
+    --hue: 125.1803272271;
+  }
+  .dot:nth-child(253) {
+    --hue: 233.1398613742;
+  }
+  .dot:nth-child(254) {
+    --hue: 0.0337241332;
+  }
+  .dot:nth-child(255) {
+    --hue: 349.4740817183;
+  }
+  .dot:nth-child(256) {
+    --hue: 63.6852493467;
+  }
+  .dot:nth-child(257) {
+    --hue: 175.5548856854;
+  }
+  .dot:nth-child(258) {
+    --hue: 57.4458013383;
+  }
+  .dot:nth-child(259) {
+    --hue: 259.9076764693;
+  }
+  .dot:nth-child(260) {
+    --hue: 175.0901384234;
+  }
+  .dot:nth-child(261) {
+    --hue: 208.386699571;
+  }
+  .dot:nth-child(262) {
+    --hue: 51.2414884477;
+  }
+  .dot:nth-child(263) {
+    --hue: 187.3366154532;
+  }
+  .dot:nth-child(264) {
+    --hue: 90.8660323234;
+  }
+  .dot:nth-child(265) {
+    --hue: 272.6475398073;
+  }
+  .dot:nth-child(266) {
+    --hue: 40.2129977889;
+  }
+  .dot:nth-child(267) {
+    --hue: 11.3270436911;
+  }
+  .dot:nth-child(268) {
+    --hue: 1.1382442427;
+  }
+  .dot:nth-child(269) {
+    --hue: 236.3211365897;
+  }
+  .dot:nth-child(270) {
+    --hue: 336.4293144726;
+  }
+  .dot:nth-child(271) {
+    --hue: 3.4306976797;
+  }
+  .dot:nth-child(272) {
+    --hue: 245.1835893712;
+  }
+  .dot:nth-child(273) {
+    --hue: 136.2196186093;
+  }
+  .dot:nth-child(274) {
+    --hue: 168.1545818125;
+  }
+  .dot:nth-child(275) {
+    --hue: 101.260813134;
+  }
+  .dot:nth-child(276) {
+    --hue: 326.7602915777;
+  }
+  .dot:nth-child(277) {
+    --hue: 196.822542458;
+  }
+  .dot:nth-child(278) {
+    --hue: 294.2208589133;
+  }
+  .dot:nth-child(279) {
+    --hue: 314.5627583903;
+  }
+  .dot:nth-child(280) {
+    --hue: 238.3199753519;
+  }
+  .dot:nth-child(281) {
+    --hue: 200.7398566911;
+  }
+  .dot:nth-child(282) {
+    --hue: 221.6476130252;
+  }
+  .dot:nth-child(283) {
+    --hue: 250.2152460242;
+  }
+  .dot:nth-child(284) {
+    --hue: 6.0784353951;
+  }
+  .dot:nth-child(285) {
+    --hue: 198.4307740816;
+  }
+  .dot:nth-child(286) {
+    --hue: 187.8053052008;
+  }
+  .dot:nth-child(287) {
+    --hue: 26.3019977526;
+  }
+  .dot:nth-child(288) {
+    --hue: 295.0292627069;
+  }
+  .dot:nth-child(289) {
+    --hue: 10.3773901317;
+  }
+  .dot:nth-child(290) {
+    --hue: 200.6641103682;
+  }
+  .dot:nth-child(291) {
+    --hue: 4.8208563677;
+  }
+  .dot:nth-child(292) {
+    --hue: 61.0729474328;
+  }
+  .dot:nth-child(293) {
+    --hue: 349.0089412778;
+  }
+  .dot:nth-child(294) {
+    --hue: 171.8019280179;
+  }
+  .dot:nth-child(295) {
+    --hue: 46.9740321228;
+  }
+  .dot:nth-child(296) {
+    --hue: 310.6923964562;
+  }
+  .dot:nth-child(297) {
+    --hue: 14.8739249287;
+  }
+  .dot:nth-child(298) {
+    --hue: 127.9355363685;
+  }
+  .dot:nth-child(299) {
+    --hue: 89.9372078771;
+  }
+  .dot:nth-child(300) {
+    --hue: 278.4816916707;
+  }
+  .dot:nth-child(301) {
+    --hue: 94.8921417886;
+  }
+  .dot:nth-child(302) {
+    --hue: 46.8715212964;
+  }
+  .dot:nth-child(303) {
+    --hue: 126.1320138024;
+  }
+  .dot:nth-child(304) {
+    --hue: 120.0474524789;
+  }
+  .dot:nth-child(305) {
+    --hue: 48.6638283802;
+  }
+  .dot:nth-child(306) {
+    --hue: 129.4551435554;
+  }
+  .dot:nth-child(307) {
+    --hue: 308.2064093821;
+  }
+  .dot:nth-child(308) {
+    --hue: 273.463253231;
+  }
+  .dot:nth-child(309) {
+    --hue: 61.6385747344;
+  }
+  .dot:nth-child(310) {
+    --hue: 237.0690320556;
+  }
+  .dot:nth-child(311) {
+    --hue: 86.7633138958;
+  }
+  .dot:nth-child(312) {
+    --hue: 13.376078569;
+  }
+  .dot:nth-child(313) {
+    --hue: 347.711625861;
+  }
+  .dot:nth-child(314) {
+    --hue: 55.7417931336;
+  }
+  .dot:nth-child(315) {
+    --hue: 301.358078428;
+  }
+  .dot:nth-child(316) {
+    --hue: 304.4112840641;
+  }
+  .dot:nth-child(317) {
+    --hue: 120.3137595922;
+  }
+  .dot:nth-child(318) {
+    --hue: 150.6676547366;
+  }
+  .dot:nth-child(319) {
+    --hue: 329.4745445062;
+  }
+  .dot:nth-child(320) {
+    --hue: 75.1112785171;
+  }
+  .dot:nth-child(321) {
+    --hue: 332.9769388203;
+  }
+  .dot:nth-child(322) {
+    --hue: 285.4350798898;
+  }
+  .dot:nth-child(323) {
+    --hue: 352.6046323271;
+  }
+  .dot:nth-child(324) {
+    --hue: 218.7281184992;
+  }
+  .dot:nth-child(325) {
+    --hue: 317.7331433651;
+  }
+  .dot:nth-child(326) {
+    --hue: 356.9289220608;
+  }
+  .dot:nth-child(327) {
+    --hue: 316.9091457119;
+  }
+  .dot:nth-child(328) {
+    --hue: 272.5717078896;
+  }
+  .dot:nth-child(329) {
+    --hue: 253.0556047353;
+  }
+  .dot:nth-child(330) {
+    --hue: 199.6724849446;
+  }
+  .dot:nth-child(331) {
+    --hue: 358.8029418479;
+  }
+  .dot:nth-child(332) {
+    --hue: 177.1923697061;
+  }
+  .dot:nth-child(333) {
+    --hue: 316.2924170798;
+  }
+  .dot:nth-child(334) {
+    --hue: 286.272526125;
+  }
+  .dot:nth-child(335) {
+    --hue: 171.885323834;
+  }
+  .dot:nth-child(336) {
+    --hue: 271.9418389924;
+  }
+  .dot:nth-child(337) {
+    --hue: 60.814240412;
+  }
+  .dot:nth-child(338) {
+    --hue: 346.3600520256;
+  }
+  .dot:nth-child(339) {
+    --hue: 108.369557961;
+  }
+  .dot:nth-child(340) {
+    --hue: 233.1607155219;
+  }
+  .dot:nth-child(341) {
+    --hue: 205.8240869903;
+  }
+  .dot:nth-child(342) {
+    --hue: 302.2058718604;
+  }
+  .dot:nth-child(343) {
+    --hue: 298.2192626529;
+  }
+  .dot:nth-child(344) {
+    --hue: 46.3923346205;
+  }
+  .dot:nth-child(345) {
+    --hue: 132.495531238;
+  }
+  .dot:nth-child(346) {
+    --hue: 142.4948509157;
+  }
+  .dot:nth-child(347) {
+    --hue: 254.483168199;
+  }
+  .dot:nth-child(348) {
+    --hue: 144.6226585959;
+  }
+  .dot:nth-child(349) {
+    --hue: 306.1184586978;
+  }
+  .dot:nth-child(350) {
+    --hue: 65.0221681377;
+  }
+  .dot:nth-child(351) {
+    --hue: 181.5898275935;
+  }
+  .dot:nth-child(352) {
+    --hue: 150.2743535442;
+  }
+  .dot:nth-child(353) {
+    --hue: 230.7059398601;
+  }
+  .dot:nth-child(354) {
+    --hue: 263.7212576609;
+  }
+  .dot:nth-child(355) {
+    --hue: 289.384119705;
+  }
+  .dot:nth-child(356) {
+    --hue: 128.6183967635;
+  }
+  .dot:nth-child(357) {
+    --hue: 50.3287281811;
+  }
+  .dot:nth-child(358) {
+    --hue: 195.6157353808;
+  }
+  .dot:nth-child(359) {
+    --hue: 272.7067030358;
+  }
+  .dot:nth-child(360) {
+    --hue: 21.1369514198;
+  }
+  .dot:nth-child(361) {
+    --hue: 330.1909986673;
+  }
+  .dot:nth-child(362) {
+    --hue: 272.2998065586;
+  }
+  .dot:nth-child(363) {
+    --hue: 120.1168121953;
+  }
+  .dot:nth-child(364) {
+    --hue: 123.6447419841;
+  }
+  .dot:nth-child(365) {
+    --hue: 250.8091412642;
+  }
+  .dot:nth-child(366) {
+    --hue: 110.7182003174;
+  }
+  .dot:nth-child(367) {
+    --hue: 289.53921218;
+  }
+  .dot:nth-child(368) {
+    --hue: 70.2475336628;
+  }
+  .dot:nth-child(369) {
+    --hue: 49.7791683466;
+  }
+  .dot:nth-child(370) {
+    --hue: 76.2419839638;
+  }
+  .dot:nth-child(371) {
+    --hue: 280.8887894939;
+  }
+  .dot:nth-child(372) {
+    --hue: 213.1879631449;
+  }
+  .dot:nth-child(373) {
+    --hue: 326.2270243635;
+  }
+  .dot:nth-child(374) {
+    --hue: 258.446004687;
+  }
+  .dot:nth-child(375) {
+    --hue: 54.3766077079;
+  }
+  .dot:nth-child(376) {
+    --hue: 290.2746084688;
+  }
+  .dot:nth-child(377) {
+    --hue: 284.4976097794;
+  }
+  .dot:nth-child(378) {
+    --hue: 84.834727181;
+  }
+  .dot:nth-child(379) {
+    --hue: 157.2949812315;
+  }
+  .dot:nth-child(380) {
+    --hue: 285.5442235627;
+  }
+  .dot:nth-child(381) {
+    --hue: 344.9249057619;
+  }
+  .dot:nth-child(382) {
+    --hue: 292.8376718084;
+  }
+  .dot:nth-child(383) {
+    --hue: 58.7905613359;
+  }
+  .dot:nth-child(384) {
+    --hue: 169.3100568204;
+  }
+  .dot:nth-child(385) {
+    --hue: 258.928282371;
+  }
+  .dot:nth-child(386) {
+    --hue: 352.2323592477;
+  }
+  .dot:nth-child(387) {
+    --hue: 355.4374194096;
+  }
+  .dot:nth-child(388) {
+    --hue: 191.6024616048;
+  }
+  .dot:nth-child(389) {
+    --hue: 182.9681955174;
+  }
+  .dot:nth-child(390) {
+    --hue: 175.4296032142;
+  }
+  .dot:nth-child(391) {
+    --hue: 143.3060917267;
+  }
+  .dot:nth-child(392) {
+    --hue: 241.5502437178;
+  }
+  .dot:nth-child(393) {
+    --hue: 238.3062276222;
+  }
+  .dot:nth-child(394) {
+    --hue: 157.7102122355;
+  }
+  .dot:nth-child(395) {
+    --hue: 309.0174193172;
+  }
+  .dot:nth-child(396) {
+    --hue: 259.6637270762;
+  }
+  .dot:nth-child(397) {
+    --hue: 43.7489633824;
+  }
+  .dot:nth-child(398) {
+    --hue: 18.5165136219;
+  }
+  .dot:nth-child(399) {
+    --hue: 254.8287498854;
+  }
+  .dot:nth-child(400) {
+    --hue: 10.4041265936;
+  }
+  .dot:nth-child(20n+1) {
+    --delay1: 0s;
+  }
+  .dot:nth-child(n+1):nth-child(-n+20) {
+    --delay2: 0s;
+  }
+  .dot:nth-child(20n+2) {
+    --delay1: -0.3s;
+  }
+  .dot:nth-child(n+21):nth-child(-n+40) {
+    --delay2: -0.2s;
+  }
+  .dot:nth-child(20n+3) {
+    --delay1: -0.6s;
+  }
+  .dot:nth-child(n+41):nth-child(-n+60) {
+    --delay2: -0.4s;
+  }
+  .dot:nth-child(20n+4) {
+    --delay1: -0.9s;
+  }
+  .dot:nth-child(n+61):nth-child(-n+80) {
+    --delay2: -0.6s;
+  }
+  .dot:nth-child(20n+5) {
+    --delay1: -1.2s;
+  }
+  .dot:nth-child(n+81):nth-child(-n+100) {
+    --delay2: -0.8s;
+  }
+  .dot:nth-child(20n+6) {
+    --delay1: -1.5s;
+  }
+  .dot:nth-child(n+101):nth-child(-n+120) {
+    --delay2: -1s;
+  }
+  .dot:nth-child(20n+7) {
+    --delay1: -1.8s;
+  }
+  .dot:nth-child(n+121):nth-child(-n+140) {
+    --delay2: -1.2s;
+  }
+  .dot:nth-child(20n+8) {
+    --delay1: -2.1s;
+  }
+  .dot:nth-child(n+141):nth-child(-n+160) {
+    --delay2: -1.4s;
+  }
+  .dot:nth-child(20n+9) {
+    --delay1: -2.4s;
+  }
+  .dot:nth-child(n+161):nth-child(-n+180) {
+    --delay2: -1.6s;
+  }
+  .dot:nth-child(20n+10) {
+    --delay1: -2.7s;
+  }
+  .dot:nth-child(n+181):nth-child(-n+200) {
+    --delay2: -1.8s;
+  }
+  .dot:nth-child(20n+11) {
+    --delay1: -3s;
+  }
+  .dot:nth-child(n+201):nth-child(-n+220) {
+    --delay2: -2s;
+  }
+  .dot:nth-child(20n+12) {
+    --delay1: -3.3s;
+  }
+  .dot:nth-child(n+221):nth-child(-n+240) {
+    --delay2: -2.2s;
+  }
+  .dot:nth-child(20n+13) {
+    --delay1: -3.6s;
+  }
+  .dot:nth-child(n+241):nth-child(-n+260) {
+    --delay2: -2.4s;
+  }
+  .dot:nth-child(20n+14) {
+    --delay1: -3.9s;
+  }
+  .dot:nth-child(n+261):nth-child(-n+280) {
+    --delay2: -2.6s;
+  }
+  .dot:nth-child(20n+15) {
+    --delay1: -4.2s;
+  }
+  .dot:nth-child(n+281):nth-child(-n+300) {
+    --delay2: -2.8s;
+  }
+  .dot:nth-child(20n+16) {
+    --delay1: -4.5s;
+  }
+  .dot:nth-child(n+301):nth-child(-n+320) {
+    --delay2: -3s;
+  }
+  .dot:nth-child(20n+17) {
+    --delay1: -4.8s;
+  }
+  .dot:nth-child(n+321):nth-child(-n+340) {
+    --delay2: -3.2s;
+  }
+  .dot:nth-child(20n+18) {
+    --delay1: -5.1s;
+  }
+  .dot:nth-child(n+341):nth-child(-n+360) {
+    --delay2: -3.4s;
+  }
+  .dot:nth-child(20n+19) {
+    --delay1: -5.4s;
+  }
+  .dot:nth-child(n+361):nth-child(-n+380) {
+    --delay2: -3.6s;
+  }
+  .dot:nth-child(20n+20) {
+    --delay1: -5.7s;
+  }
+  .dot:nth-child(n+381):nth-child(-n+400) {
+    --delay2: -3.8s;
+  }

@@ -1,0 +1,251 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #111;
+    background-image: radial-gradient(circle at center, #222, #000);
+    color: #fff;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    perspective: 1200px;
+    overflow: hidden;
+  }
+  body *:not(:empty) {
+    transform-style: preserve-3d;
+  }
+  
+  .ring {
+    position: relative;
+    -webkit-animation: ring 20s infinite linear;
+            animation: ring 20s infinite linear;
+  }
+  @-webkit-keyframes ring {
+    to {
+      transform: rotateY(720deg) rotateX(360deg);
+    }
+  }
+  @keyframes ring {
+    to {
+      transform: rotateY(720deg) rotateX(360deg);
+    }
+  }
+  .ring * {
+    position: absolute;
+  }
+  
+  .diamond {
+    font-size: 10px;
+    width: 3em;
+    height: 0;
+    transform: translateX(-50%) rotateZ(var(--rz)) translateY(11.25em) rotateX(90deg);
+    -webkit-animation: triangleTransform 4s var(--delay, 0s) infinite linear;
+            animation: triangleTransform 4s var(--delay, 0s) infinite linear;
+  }
+  @-webkit-keyframes triangleTransform {
+    from {
+      transform: translateX(-50%) rotateZ(var(--rz)) translateY(15em) rotateX(0deg);
+    }
+    to {
+      transform: translateX(-50%) rotateZ(var(--rz)) translateY(15em) rotateX(360deg);
+    }
+  }
+  @keyframes triangleTransform {
+    from {
+      transform: translateX(-50%) rotateZ(var(--rz)) translateY(15em) rotateX(0deg);
+    }
+    to {
+      transform: translateX(-50%) rotateZ(var(--rz)) translateY(15em) rotateX(360deg);
+    }
+  }
+  .diamond:nth-child(1) {
+    --rz: 0deg;
+    --delay: 0s;
+    --hue: 0deg;
+  }
+  .diamond:nth-child(2) {
+    --rz: 15deg;
+    --delay: -0.1666666667s;
+    --hue: 15deg;
+  }
+  .diamond:nth-child(3) {
+    --rz: 30deg;
+    --delay: -0.3333333333s;
+    --hue: 30deg;
+  }
+  .diamond:nth-child(4) {
+    --rz: 45deg;
+    --delay: -0.5s;
+    --hue: 45deg;
+  }
+  .diamond:nth-child(5) {
+    --rz: 60deg;
+    --delay: -0.6666666667s;
+    --hue: 60deg;
+  }
+  .diamond:nth-child(6) {
+    --rz: 75deg;
+    --delay: -0.8333333333s;
+    --hue: 75deg;
+  }
+  .diamond:nth-child(7) {
+    --rz: 90deg;
+    --delay: -1s;
+    --hue: 90deg;
+  }
+  .diamond:nth-child(8) {
+    --rz: 105deg;
+    --delay: -1.1666666667s;
+    --hue: 105deg;
+  }
+  .diamond:nth-child(9) {
+    --rz: 120deg;
+    --delay: -1.3333333333s;
+    --hue: 120deg;
+  }
+  .diamond:nth-child(10) {
+    --rz: 135deg;
+    --delay: -1.5s;
+    --hue: 135deg;
+  }
+  .diamond:nth-child(11) {
+    --rz: 150deg;
+    --delay: -1.6666666667s;
+    --hue: 150deg;
+  }
+  .diamond:nth-child(12) {
+    --rz: 165deg;
+    --delay: -1.8333333333s;
+    --hue: 165deg;
+  }
+  .diamond:nth-child(13) {
+    --rz: 180deg;
+    --delay: -2s;
+    --hue: 180deg;
+  }
+  .diamond:nth-child(14) {
+    --rz: 195deg;
+    --delay: -2.1666666667s;
+    --hue: 195deg;
+  }
+  .diamond:nth-child(15) {
+    --rz: 210deg;
+    --delay: -2.3333333333s;
+    --hue: 210deg;
+  }
+  .diamond:nth-child(16) {
+    --rz: 225deg;
+    --delay: -2.5s;
+    --hue: 225deg;
+  }
+  .diamond:nth-child(17) {
+    --rz: 240deg;
+    --delay: -2.6666666667s;
+    --hue: 240deg;
+  }
+  .diamond:nth-child(18) {
+    --rz: 255deg;
+    --delay: -2.8333333333s;
+    --hue: 255deg;
+  }
+  .diamond:nth-child(19) {
+    --rz: 270deg;
+    --delay: -3s;
+    --hue: 270deg;
+  }
+  .diamond:nth-child(20) {
+    --rz: 285deg;
+    --delay: -3.1666666667s;
+    --hue: 285deg;
+  }
+  .diamond:nth-child(21) {
+    --rz: 300deg;
+    --delay: -3.3333333333s;
+    --hue: 300deg;
+  }
+  .diamond:nth-child(22) {
+    --rz: 315deg;
+    --delay: -3.5s;
+    --hue: 315deg;
+  }
+  .diamond:nth-child(23) {
+    --rz: 330deg;
+    --delay: -3.6666666667s;
+    --hue: 330deg;
+  }
+  .diamond:nth-child(24) {
+    --rz: 345deg;
+    --delay: -3.8333333333s;
+    --hue: 345deg;
+  }
+  .diamond div {
+    left: 50%;
+    width: 200%;
+    height: 8.7em;
+    background-color: hsl(var(--hue), 75%, 75%);
+    background-image: linear-gradient(#0002, #0000 25% 75%, #0001);
+    transform-origin: top;
+  }
+  .diamond div:nth-child(1) {
+    transform: translateX(-50%) rotateX(30deg);
+  }
+  .diamond div:nth-child(2) {
+    transform: translateX(-50%) rotateX(-30deg);
+  }
+  .diamond div:nth-child(3) {
+    transform: translateX(-50%) translateY(15em) rotateX(-150deg);
+  }
+  .diamond div:nth-child(4) {
+    transform: translateX(-50%) translateY(15em) rotateX(150deg);
+  }
+  .diamond div:nth-child(1), .diamond div:nth-child(2) {
+    -webkit-animation: clip12 2s var(--delay, 0s) infinite ease-in-out alternate;
+            animation: clip12 2s var(--delay, 0s) infinite ease-in-out alternate;
+  }
+  @-webkit-keyframes clip12 {
+    from {
+      -webkit-clip-path: polygon(25% 0, 75% 0, 87.5% 100%, 12.5% 100%);
+              clip-path: polygon(25% 0, 75% 0, 87.5% 100%, 12.5% 100%);
+    }
+    to {
+      -webkit-clip-path: polygon(25% 0, 75% 0, 62.5% 100%, 37.5% 100%);
+              clip-path: polygon(25% 0, 75% 0, 62.5% 100%, 37.5% 100%);
+    }
+  }
+  @keyframes clip12 {
+    from {
+      -webkit-clip-path: polygon(25% 0, 75% 0, 87.5% 100%, 12.5% 100%);
+              clip-path: polygon(25% 0, 75% 0, 87.5% 100%, 12.5% 100%);
+    }
+    to {
+      -webkit-clip-path: polygon(25% 0, 75% 0, 62.5% 100%, 37.5% 100%);
+              clip-path: polygon(25% 0, 75% 0, 62.5% 100%, 37.5% 100%);
+    }
+  }
+  .diamond div:nth-child(3), .diamond div:nth-child(4) {
+    -webkit-animation: clip34 2s var(--delay, 0s) infinite ease-in-out alternate;
+            animation: clip34 2s var(--delay, 0s) infinite ease-in-out alternate;
+  }
+  @-webkit-keyframes clip34 {
+    from {
+      -webkit-clip-path: polygon(0 0, 100% 0, 87.5% 100%, 12.5% 100%);
+              clip-path: polygon(0 0, 100% 0, 87.5% 100%, 12.5% 100%);
+    }
+    to {
+      -webkit-clip-path: polygon(50% 0, 50% 0, 62.5% 100%, 37.5% 100%);
+              clip-path: polygon(50% 0, 50% 0, 62.5% 100%, 37.5% 100%);
+    }
+  }
+  @keyframes clip34 {
+    from {
+      -webkit-clip-path: polygon(0 0, 100% 0, 87.5% 100%, 12.5% 100%);
+              clip-path: polygon(0 0, 100% 0, 87.5% 100%, 12.5% 100%);
+    }
+    to {
+      -webkit-clip-path: polygon(50% 0, 50% 0, 62.5% 100%, 37.5% 100%);
+              clip-path: polygon(50% 0, 50% 0, 62.5% 100%, 37.5% 100%);
+    }
+  }
