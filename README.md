@@ -1,6 +1,6 @@
-- 👋 Hi, I’m @debjyotidas111
-- 👀 I’m interested in ...Python Programming
-- 🌱 I’m currently learning ...Computer Science
+- 👋 Hi, I’m @Debjyoti Das
+- 👀 I’m interested in ...Frontend Development
+- 🌱 I’m currently learning ...Web Development
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...dasdebjyoti111@gmail.com
 Instagram id --   _deb_the_mastermind
